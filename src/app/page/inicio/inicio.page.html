@@ -9,13 +9,9 @@
   <ion-list>
     <ion-list-header color="danger">Mis componentes</ion-list-header>
 
-    <ion-item>
-      <ion-icon name="star" slot="start"></ion-icon>
-      <ion-label>Etiqueta</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-icon name="star" slot="start"></ion-icon>
-      <ion-label>Etiqueta</ion-label>
+    <ion-item [routerLink]="componente.ruta" *ngFor="let componente of componentes">
+      <ion-icon [name]="componente.icono" slot="start"></ion-icon>
+      <ion-label>{{componente.nombre}}</ion-label>
     </ion-item>
 
   </ion-list>

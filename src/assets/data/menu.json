@@ -8,5 +8,10 @@
     "nombre": "Action Sheet",
     "ruta": "/action-sheet",
     "icono": "logo-apple-appstore"
+  },
+  {
+    "nombre": "Grid y Buttons",
+    "ruta": "/grid-buttons",
+    "icono": "grid"
   }
 ]

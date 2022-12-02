@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'action-sheet',
     loadChildren: () => import('./page/action-sheet/action-sheet.module').then( m => m.ActionSheetPageModule)
   },
+  {
+    path: 'grid-buttons',
+    loadChildren: () => import('./pages/grid-buttons/grid-buttons.module').then( m => m.GridButtonsPageModule)
+  },
 ];
 
 @NgModule({

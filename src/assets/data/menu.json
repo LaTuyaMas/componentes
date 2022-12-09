@@ -23,5 +23,10 @@
     "nombre": "Cards",
     "ruta": "/card",
     "icono": "card"
+  },
+  {
+    "nombre": "Fab",
+    "ruta": "/fab",
+    "icono": "car"
   }
 ]

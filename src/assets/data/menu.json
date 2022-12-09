@@ -13,5 +13,10 @@
     "nombre": "Grid y Buttons",
     "ruta": "/grid-buttons",
     "icono": "grid"
+  },
+  {
+    "nombre": "Avatar",
+    "ruta": "/avatar",
+    "icono": "beaker"
   }
 ]

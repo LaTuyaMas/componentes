@@ -18,5 +18,10 @@
     "nombre": "Avatar",
     "ruta": "/avatar",
     "icono": "beaker"
+  },
+  {
+    "nombre": "Cards",
+    "ruta": "/card",
+    "icono": "card"
   }
 ]

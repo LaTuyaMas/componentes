@@ -11,7 +11,10 @@ import {IonList, ToastController} from "@ionic/angular";
 export class ListasPage implements OnInit {
 
   @ViewChild('lista', {static: false}) lista!: IonList;
+
   usuarios: Usuario[] = []
+  habilitado: boolean = true;
+
   constructor(private dataService: DataService,
               private toastCtrl: ToastController) { }
 
@@ -43,6 +46,15 @@ export class ListasPage implements OnInit {
     console.log(user);
     this.presentToast('Compartir '+user.name, 'secondary');
     this.lista.closeSlidingItems();
+  }
+
+  reordenar(event: any){
+    console.log(event);
+
+    const itemMover = this.usuarios.splice(event.detail.from, 1)[0];
+    this.usuarios.splice(event.detail.to, 0, itemMover);
+
+    event.detail.complete();
   }
 
   private async presentToast(message: string, color: string) {

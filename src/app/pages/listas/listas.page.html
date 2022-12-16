@@ -56,4 +56,29 @@
 
   </ion-list>
 
+  <ion-list>
+    <ion-list-header>
+      <h2>List 3 - Reorder</h2>
+    </ion-list-header>
+
+    <ion-toggle [(ngModel)]="habilitado"></ion-toggle>
+    <ion-reorder-group [disabled]="!habilitado"
+                        (ionItemReorder)="reordenar($event)">
+
+      <ion-item *ngFor="let user of usuarios">
+        <ion-avatar slot="start">
+          <ion-img src="/assets/shapes.svg"></ion-img>
+        </ion-avatar>
+
+        <ion-label>
+          <h2>{{user.name}}</h2>
+          <p>{{user.company.name}}</p>
+        </ion-label>
+
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+
+    </ion-reorder-group>
+  </ion-list>
+
 </ion-content>

@@ -38,5 +38,10 @@
     "nombre": "Slides Stories Instagram",
     "ruta": "/slides2",
     "icono": "logo-instagram"
+  },
+  {
+    "nombre": "Listas",
+    "ruta": "/listas",
+    "icono": "list"
   }
 ]

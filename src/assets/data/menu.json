@@ -53,5 +53,10 @@
     "nombre": "Infinite Scroll 2",
     "ruta": "/infinite-scroll2",
     "icono": "infinite-outline"
+  },
+  {
+    "nombre": "Modal",
+    "ruta": "/modal",
+    "icono": "phone-portrait"
   }
 ]

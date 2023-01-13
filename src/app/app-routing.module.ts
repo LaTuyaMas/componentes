@@ -55,6 +55,14 @@ const routes: Routes = [
     path: 'infinite-scroll2',
     loadChildren: () => import('./pages/infinite-scroll2/infinite-scroll2.module').then( m => m.InfiniteScroll2PageModule)
   },
+  {
+    path: 'modal',
+    loadChildren: () => import('./pages/modal/modal.module').then( m => m.ModalPageModule)
+  },
+  {
+    path: 'tabs',
+    loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
+  },
 ];
 
 @NgModule({

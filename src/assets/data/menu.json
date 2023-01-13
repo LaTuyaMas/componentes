@@ -43,5 +43,10 @@
     "nombre": "Listas",
     "ruta": "/listas",
     "icono": "list"
+  },
+  {
+    "nombre": "Infinite Scroll",
+    "ruta": "/infinite-scroll",
+    "icono": "infinite"
   }
 ]
